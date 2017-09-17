@@ -45,7 +45,7 @@ class Dog(object):
 def walker(name):
     """walker: an example of a python function"""
     dog1 = Dog(name)
-    dog1.add_trick("Bark at a person")
+    dog1.add_trick("Catching ball")
     print("Walking a new dog:")
     print("  The kind of this thing is ",dog1.kind)
     print("  This dog is ",dog1.name)
