@@ -19,13 +19,13 @@ import sys
 import os
 import datetime
 
-__author__ = "Bruce Montgomery and Bhallaji Venkatesankulathusundaram"
-__copyright__ = "Copyright (C) 2017 by Bruce Montgomery and Bhallaji Venkatesankulathusundaram"
+__author__ = "Hari Shreenivash Madras Vanamamalai"
+__copyright__ = "Copyright (C) 2017 by Hari Shreenivash Madras Vanamamalai"
 #
 # Redistribution, modification or use of this software in source or binary
 # forms is permitted as long as the files maintain this copyright. Users are
 # permitted to modify this and use it to learn about the field of embedded
-# software. Bruce Montgomery, Bhallaji Venkatesankulathusundaram, and the University of Colorado
+# software. Hari Shreenivash Madras Vanamamalai, and the University of Colorado
 # are not liable for any misuse of this material.
 #
 
@@ -45,7 +45,7 @@ class Dog(object):
 def walker(name):
     """walker: an example of a python function"""
     dog1 = Dog(name)
-    dog1.add_trick("Roll Over")
+    dog1.add_trick("Bark at a person")
     print("Walking a new dog:")
     print("  The kind of this thing is ",dog1.kind)
     print("  This dog is ",dog1.name)
@@ -62,4 +62,4 @@ def walker(name):
 #    ...runs walker on the name Fred...
 
 if __name__ == "__main__":
-    walker((sys.argv[1]))
+    walker((sys.argv[0]))
