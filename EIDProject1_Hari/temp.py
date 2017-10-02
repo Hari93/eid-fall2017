@@ -118,7 +118,8 @@ def Tab():
 
 ###############  Action performed when each function is called ##########
 def button1_clicked():
-    humidity, temperature1 = Adafruit_DHT.read_retry(22, 4)
+    ################ Defining parameters for sensor like sensor name, pin number , number of retries ############
+    humidity, temperature1 = Adafruit_DHT.read_retry(22, 4, 2)
     print(" Refresh Temperature Button is pressed")
     try:
        w = QtGui.QWidget()
@@ -161,7 +162,8 @@ def button2_clicked():
 
 ######## Defining action event when refresh humidity button is pressed ########
 def b1_clicked():
-    humidity1, temperature = Adafruit_DHT.read_retry(22, 4)
+    ################ Defining parameters for sensor like sensor name, pin number , number of retries ############
+    humidity1, temperature = Adafruit_DHT.read_retry(22, 4, 2)
     print(" Refresh Humidity Button is pressed")
     try:
         ##### Creating Window ########
